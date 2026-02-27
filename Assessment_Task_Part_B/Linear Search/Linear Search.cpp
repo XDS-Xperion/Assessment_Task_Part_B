@@ -25,7 +25,7 @@ int Linear_Search(int target_value, int array_of_numbers[], int array_of_numbers
 
 int main()
 {
-	// Initialise Array Of Numbers.
+	// Initialize Array Of Numbers.
 	int array_of_numbers[] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
 
 	// Calculate The Length Of The Array Of Numbers.
