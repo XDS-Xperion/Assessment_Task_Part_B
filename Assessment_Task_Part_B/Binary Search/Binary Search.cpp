@@ -58,7 +58,7 @@ int Binary_Search(int target_value, int array_of_sorted_numbers[], int array_of_
 
 	while (left <= right)
 	{
-		// Calculate Middle Index.
+		// Calculate The Middle Index.
 		int middle = (left + right) / 2;
 
 		// Check To See If The Target Value Is At The Middle Index.
@@ -111,4 +111,40 @@ int main()
 	assert(Binary_Search(23, array_to_be_sorted, array_to_be_sorted_length) == 8);
 	assert(Binary_Search(97, array_to_be_sorted, array_to_be_sorted_length) == 19);
 	assert(Binary_Search(88, array_to_be_sorted, array_to_be_sorted_length) == -1);
+
+	// Keeps Track Of The Users Input.
+	int user_input = 0;
+
+	// Loop Until The Users Input Is -1
+	while (user_input != -1)
+	{
+		// Output The Sorted Array Of Numbers To The Console.
+		cout << "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 43, 53, 61, 67, 71, 83, 89, 97";
+
+		// Prompt The User For Their Input.
+		cout << "\n\nPlease Enter A Value To Search For Or Enter -1 To End: ";
+
+		// Gather The Users Input.
+		cin >> user_input;
+
+		// Check To See If The User Wants To End The Program.
+		if (user_input != -1)
+		{
+			// Use Binary Search To Search For The Users Input.
+			int result = Binary_Search(user_input, array_to_be_sorted, array_to_be_sorted_length);
+
+			if (result == -1) // Value Not Found In The Array.
+			{
+				// Output The Value Not Found Message To The Console.
+				cout << "\nThe Number \"" << user_input << "\" Was Not Found In The Array.";
+			}
+			else // Value Found In The Array.
+			{
+				// Output The Value Found Message To The Console.
+				cout << "\nThe Number \"" << user_input << "\" Was Found In The Array At Index " << result <<".";
+			}
+
+			cout << "\n\n";
+		}
+	}
 }
