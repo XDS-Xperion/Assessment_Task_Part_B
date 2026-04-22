@@ -60,7 +60,7 @@ int main()
 	Bubble_Sort(array_to_be_sorted, array_to_be_sorted_length);
 
 	// Loop Through The Sorted Array In Pairs.
-	for (int index_of_number_to_check = 0; index_of_number_to_check < array_to_be_sorted_length -1; ++index_of_number_to_check)
+	for (int index_of_number_to_check = 0; index_of_number_to_check < array_to_be_sorted_length - 1; ++index_of_number_to_check)
 	{
 		// Assert That The First Number In The Pair Is Less Then The Second Number In The Pair.
 		// This Is To Confirm That The "Bubble Sort" Function Sorted The Array In Ascending Order Correctly.
