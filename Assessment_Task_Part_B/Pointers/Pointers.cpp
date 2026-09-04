@@ -28,4 +28,12 @@ int main()
 	// Assert That The Values Have Been Swapped.
 	assert(a == 197);
 	assert(b == 290);
+
+	int c = 80;
+	int d = 69;
+
+	Swap_Numbers(&c, &d);
+
+	assert(c == 69);
+	assert(d == 80);
 }
